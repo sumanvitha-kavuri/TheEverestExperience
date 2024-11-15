@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.active {
+  color: #00008B;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 30px;
+}
+
+/* Header */
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("C:\\Users\\panug\\Desktop\\img\\everest.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-content {
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: #00008B;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.ctn {
+  padding: 8px 15px;
+  background: #00008B;
+  border-radius: 30px;
+  color: whitesmoke;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.ctn:hover {
+  background: whitesmoke;
+  color: #00008B;
+  box-shadow: 2px 2px 5px #00000056;
+}
+
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/
+* Events */
+section{
+width:80px;
+margin:80px auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: #49497e;
+  background:#ADD8E6;
+  margin-bottom:20px;
+}
+
+.row{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  width: 100%;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+  max-width:45%;
+  margin:20px;
+padding:0;
+box-sizing:border-box;
+position:relative;
+}
+.col img {
+  max-width: 100%;
+  height: 200px;
+  object-fit:cover;
+  display: block; 
+}
+
+
+h4 {
+  font-size: 3vmin;
+  color: #484872;
+  margin: 20px auto;
+}
+
+p {
+  color: #00008b;
+  padding: 0px 40px;
+  max-width:300px
+}
+/* Image Wrapper */
+.image-wrapper {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+/* Ensures all images fit the same dimensions */
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper img:hover {
+  transform: scale(1.1);
+}
+
+.events.ctn {
+  margin-top: 15px;
+}
+/* Explore Section */
+.explore {
+  width: 100%;
+  height: 80vh;
+  background-image: url("C:\\Users\\panug\\Desktop\\img\\deathzone.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.explore-content {
+  width: 50%;
+  padding: 50px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+justify-content:center;
+  flex-direction: column;
+}
+
+.explore-content h1 {
+  margin: 50px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  object-fit:cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width:250px;
+  height:250px;
+  margin: 10px;
+  object-fit:hidden;
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 80px;
+  background: #484872;
+  text-align: center;
+}
+
+.footer p {
+  color: whitesmoke;
+  margin: 10px auto;
+}
